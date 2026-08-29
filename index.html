@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glider固有振動 プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --bg: #eef2f5;
+    --panel: #ffffff;
+    --ink: #1b2733;
+    --ink-soft: #55697a;
+    --line: #d7e0e6;
+    --accent: #d9772e;
+    --chip: #f4f7f9;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12171c;
+      --panel: #1a2129;
+      --ink: #e8eef2;
+      --ink-soft: #93a5b3;
+      --line: #2b3742;
+      --accent: #eb9350;
+      --chip: #212b33;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #12171c;
+    --panel: #1a2129;
+    --ink: #e8eef2;
+    --ink-soft: #93a5b3;
+    --line: #2b3742;
+    --accent: #eb9350;
+    --chip: #212b33;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", "Hiragino Sans", sans-serif;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(26px, 5vw, 34px);
+    letter-spacing: -0.01em;
+    margin: 6px 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+  }
+
+  .summary {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+  .summary strong { color: var(--accent); }
+
+  section {
+    padding: 26px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  p { margin: 0 0 12px; font-size: 15px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; }
+  ul li { margin-bottom: 8px; }
+  ul li:last-child { margin-bottom: 0; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+
+  .tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 11px;
+    color: var(--ink-soft);
+  }
+
+  footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Glider固有振動 プライバシーポリシー</h1>
+    <div class="meta">最終更新日: 2026年8月29日 ／ 対象アプリ: Glider固有振動（iOS）</div>
+
+    <div class="summary">
+      <strong>ひとことで言うと:</strong> 本アプリは、いかなる個人情報も外部に送信しません。
+      通信機能を一切持たず、加速度センサーのデータはすべて端末内だけで処理・破棄されます。
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span>取得する情報</h2>
+    <p>本アプリは、固有振動数を計測する目的でのみ、以下の情報を端末内で読み取ります。</p>
+    <ul>
+      <li>
+        <strong>モーションデータ（加速度センサー）</strong> — iOSの「モーションとフィットネス」権限を通じて取得します。
+        計測中および解析処理のためだけに端末のメモリ上で使用され、計測終了後や新しい計測の開始時に破棄されます。
+      </li>
+      <li>
+        <strong>システム音量</strong> — 音量ボタンでの計測開始機能のため、現在のシステム音量を一時的に参照します。
+        個人を特定する情報ではなく、記録も送信もしません。
+      </li>
+    </ul>
+    <p>これらの情報はいずれも、外部サーバーへの送信や他のアプリとの共有を一切行いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>取得しない情報</h2>
+    <p>氏名・メールアドレス・位置情報・連絡先・写真・マイク音声など、上記以外の情報は一切取得しません。</p>
+    <div class="tag-row">
+      <span class="tag">位置情報 — 未使用</span>
+      <span class="tag">連絡先 — 未使用</span>
+      <span class="tag">写真/カメラ — 未使用</span>
+      <span class="tag">マイク — 未使用</span>
+      <span class="tag">アカウント登録 — なし</span>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>インターネット通信</h2>
+    <p>
+      本アプリはネットワーク通信を行いません。広告表示、アクセス解析（アナリティクス）、
+      クラッシュレポートの自動送信、その他の外部SDKも組み込んでいません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>データの保存</h2>
+    <p>
+      計測結果（推定周波数・スペクトルなど）は、結果画面を表示している間だけ端末のメモリ上に保持されます。
+      アプリを終了する、または新しく計測をやり直すと消去されます。ディスクへの保存やiCloudへの同期は行いません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>第三者への提供</h2>
+    <p>本アプリは、いかなる情報も第三者に提供・共有・販売しません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>お子様のプライバシー</h2>
+    <p>
+      本アプリは子供を対象としたものではありませんが、そもそも個人を特定できる情報を
+      いかなる利用者からも意図的に収集していません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>本ポリシーの変更</h2>
+    <p>本ポリシーの内容を変更する場合は、このページを更新し、冒頭の最終更新日を改めます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>お問い合わせ</h2>
+    <p>本アプリおよび本ポリシーに関するご質問は、下記までご連絡ください。</p>
+    <p><a href="mailto:crewboard.support@gmail.com">crewboard.support@gmail.com</a></p>
+  </section>
+
+  <footer>
+    開発者: Ryota Kawabata（個人開発）
+  </footer>
+</main>
+</body>
+</html>
